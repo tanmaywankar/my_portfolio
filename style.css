@@ -135,6 +135,7 @@
 }
 .card_text{
     position: absolute;
+    z-index: 10;
     font-family: "IBM Plex Mono" ;
     margin-left: 40px;
     margin-top: 10px;
@@ -186,13 +187,84 @@
 }
 
 .grid_item3{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
     width: 250px;
+    overflow: hidden;
     height: 320px;
     /* margin-left: 50px; */
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
-    background-color: #dbafcc;
+    background-color: #ff9dde;
     border-radius: 40px;
 }
+.grid_container{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    top: 60px;
+    border-radius: 30px;
+    background-color: #daeff4;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+    border: 5px solid #5f5f5f;
+    width: 210px;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.proficiency{
+    display: flex;
+    position: absolute;
+    background-color: #2a2a2a;
+    color: #f6f6f6;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: "IBM Plex Mono";
+    top: 0px;
+    padding:15px 0px 15px;
+    width: 100%;
+    justify-content: center;
+}
+.language{
+width: 140px;
+padding: 5px;
+margin: 5px 10px;
+background-color: #52afaf5d;
+border-radius: 0px 8px 8px 8px;
+}
+.grid_item3 svg{
+    width: 30px;
+    padding-left:10px;
+    fill: #2f4542;
+}
+.grid_icons{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+}
+.grid_text{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "IBM Plex Mono";
+}
+.icons{
+    padding: 5px;
+}
+
+.Core{
+    position: relative;
+    z-index: 10;
+    font-family: "IBM Plex Mono" ;
+    top: 30px;
+    left: 10px;
+    font-size: 20px;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
 .grid_item4{
     width: 250px;
     height: 320px;
