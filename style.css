@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #196a6a;
+.home_container{
+    background-color: #2a755a;
 }
 .hero{
-    height: 100vh;
+    height: 105vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(at 0% 0%, #1a717e 0px, transparent 60%),
-    radial-gradient(at 0% 100%, #187954 0px, transparent 60%),
-    radial-gradient(at 100% 0%, #1c7576 0px, transparent 60%),
-    radial-gradient(at 100% 100%, #249b60 0px, transparent 60%), #5a6e76;
+    background: radial-gradient(at 0% 0%, #417b4e 0px, transparent 60%),
+    radial-gradient(at 0% 100%, #187979 0px, transparent 80%),
+    radial-gradient(at 100% 0%, #aa891ed2 0px, transparent 60%),
+    radial-gradient(at 100% 100%, #249b60 0px, transparent 80%), #b34444;
     background-size: 150% 150%;
     mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
@@ -33,6 +33,8 @@ body{
 
  .heading{
     font-size: 120px;
+    position: relative;
+    top: -80px;
     font-family: "Playfair Display", serif;
     font-weight: 600;
     text-align: center;
@@ -53,12 +55,12 @@ body{
     height: 100%;
 }
 .Ic_left{
-    top:170px;
-    left: 190px;
+    top:120px;
+    left: 200px;
 }
 .Ic_right{
-    bottom: 170px;
-    right: 190px;
+    bottom: 270px;
+    right: 185px;
 }
 
 .navbar{
@@ -71,7 +73,8 @@ body{
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #2d2d2d74;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.263);
     backdrop-filter: blur(8px);
     display: flex;
     flex-direction: row;
@@ -79,19 +82,137 @@ body{
     border-radius: 40px;
 }
 .nav_items{
-    background-color: rgba(226, 226, 226, 0.69);
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
     font-family: monospace;
     font-weight: 700;
     font-size: 15px;
-    color: #2f2f2f;
-    padding: 10px 20px;
+    color: #f0fcff;
+    padding: 12px 30px;
     border-radius: 40px;
     margin: 0px 5px;
 }
+.nav_items.active{
+    background-color: rgba(255, 255, 255, 0.196);
+
+}
 
 .Bento_grid{
-    height: 200vh;
-    background-color: #196a6a;
+    height: max-content;
+    margin-bottom: 100px;
+    background: #2a755a  ;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.grid1{
+    position: relative;
+    justify-content: center;
+    top: -80px;
+    display: flex;
+    width: 100%;
+}
+.grid2{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.grid_item1{
+    width: 720px;
+    position: relative;
+    height: 500px;
+    display: flex;
+    background-color: #cbe4b2;
+    overflow: hidden;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+.Recent_project_Image{
+    position: absolute;
+    width: 700px;
+    bottom: -40px;
+    right: -10px;
+}
+.card_text{
+    position: absolute;
+    font-family: "IBM Plex Mono" ;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.card_brief{
+    position: absolute;
+    font-family: "Playfair Display" ;
+    margin-left: 40px;
+    margin-top: 35px;
+    font-size: 30px;
+    color: #0f4139;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.Disclaimer{
+    position: absolute;  
+    font-family: sans-serif;
+    bottom: 10px;
+    right: 20px;
+    z-index: 5;
+    font-weight: 500;
+    background-color: #2a2a2a81;
+    color: #f0fcff94;
+    padding: 5px;
+    border-radius: 8px;
+}
+.grid_item2{
+    width: 550px;
+    position: relative;
+    height: 500px;
+    margin-left: 50px;
+    overflow: hidden;
+    background-color: #a9cc6c;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
 
+.IOT_Image{
+    position: absolute;
+    bottom: -410px;
+    width: 450px;
+    left: 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 30px 30px 0px 0px;
+}
+
+.grid_item3{
+    width: 250px;
+    height: 320px;
+    /* margin-left: 50px; */
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+    background-color: #dbafcc;
+    border-radius: 40px;
+}
+.grid_item4{
+    width: 250px;
+    height: 320px;
+    margin-left: 40px;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+    background-color: #a195c6;
+    border-radius: 40px;
+}
+.grid_item5{
+    width: 750px;
+    height: 320px;
+    margin-left: 40px;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+    background-color: #98dcba;
+    border-radius: 40px;
+}
+.contacts{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    border-radius: 70px 70px 0px 0px;
+    background-color:#b8f7ff;
 }
