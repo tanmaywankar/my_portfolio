@@ -83,9 +83,10 @@
 }
 .nav_items{
     /* backdrop-filter: blur(8px); */
-    font-family: monospace;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 13px;
     color: #f0fcff;
     padding: 12px 30px;
     border-radius: 40px;
@@ -258,7 +259,6 @@ border-radius: 0px 8px 8px 8px;
     z-index: 10;
     font-family: "IBM Plex Mono" ;
     top: 30px;
-    left: 10px;
     font-size: 20px;
     color: #2a2a2a;
     text-transform: uppercase;
@@ -266,6 +266,10 @@ border-radius: 0px 8px 8px 8px;
 }
 
 .grid_item4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
     width: 250px;
     height: 320px;
     margin-left: 40px;
@@ -273,14 +277,122 @@ border-radius: 0px 8px 8px 8px;
     background-color: #a195c6;
     border-radius: 40px;
 }
+
+.Work{
+    position: relative;
+    font-family: "IBM Plex Mono";
+    top: 15px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.current{
+    display: flex;
+    background-color: #ffffff42;
+    height: 100px;
+    padding-bottom: 10px;
+    width: 90%;
+    border-radius: 20px;
+}
+.currently{
+    font-family: "IBM Plex Mono";
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 10px 20px;
+    font-weight: 900;
+}
 .grid_item5{
     width: 750px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    /* overflow: hidden; */
+    justify-content: space-around;
+    align-items: center;
     height: 320px;
     margin-left: 40px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
     background-color: #98dcba;
     border-radius: 40px;
 }
+
+.Skills_container{
+    display: flex;
+    width: 95%;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 250px;
+    scroll-padding: 20px;
+}
+
+.Skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 170px;
+    height: 210px;
+    border-radius: 40px;
+    border: 3px solid #49653b;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.427);
+    background-color: #7aad5f6e;
+    flex-shrink: 0;
+}
+.Skills_container::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.Skills_container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05); 
+    border-radius: 100px;
+    margin-inline: 40px;
+}
+
+.Skills_container::-webkit-scrollbar-thumb {
+    background: #43613e;
+    border-radius: 100px;
+    border: 2px solid #98dcba; 
+}
+
+.Skills_container::-webkit-scrollbar-thumb:hover {
+    background: #6b9c63; 
+}
+.Skills_label{
+    position: absolute;
+    top: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    left: 40px;
+    display: flex;
+    font-size: 20px;
+    font-family: "IBM Plex Mono";
+}
+.Skills svg{
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.bg-circle {
+    fill: none; 
+    stroke: rgba(0, 0, 0, 0.05); 
+    stroke-width: 8px;
+}
+
+.progress-stroke {
+    fill: none; 
+    stroke: #43613e; 
+    stroke-width: 8px;
+    stroke-linecap: round; 
+    stroke-dasharray: 251; 
+    stroke-dashoffset: 210;
+}
+
 .contacts{
     position: relative;
     height: 50vh;
