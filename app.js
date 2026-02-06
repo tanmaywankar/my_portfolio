@@ -49,15 +49,15 @@ function initHeroParallax() {
         const yPos = ((e.clientY - top) / height) - 0.5;
 
         gsap.to(".heading", {
-            x: xPos * -10, 
-            y: yPos * -10,
+            x: xPos * 10, 
+            y: yPos * 10,
             duration: 0.6,
             ease: "power2.out"
         });
 
         gsap.to(".float_icon", {
-            x: xPos * -30,
-            y: yPos * -30,
+            x: xPos * 30,
+            y: yPos * 30,
             duration: 0.6,
             ease: "power2.out"
         });
