@@ -173,7 +173,7 @@
     height: 500px;
     margin-left: 50px;
     overflow: hidden;
-    background-color: #a9cc6c;
+    background-color: #EDA353;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
 }
@@ -197,7 +197,7 @@
     height: 320px;
     /* margin-left: 50px; */
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
-    background-color: #ff9dde;
+    background-color: #DB53ED; 
     border-radius: 40px;
 }
 .grid_container{
@@ -274,7 +274,7 @@ border-radius: 0px 8px 8px 8px;
     height: 320px;
     margin-left: 40px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
-    background-color: #a195c6;
+    background-color: #53C3ED;
     border-radius: 40px;
 }
 
@@ -308,13 +308,12 @@ border-radius: 0px 8px 8px 8px;
     display: flex;
     position: relative;
     flex-direction: column;
-    /* overflow: hidden; */
     justify-content: space-around;
     align-items: center;
     height: 320px;
     margin-left: 40px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
-    background-color: #98dcba;
+    background-color: #688B98;
     border-radius: 40px;
 }
 
@@ -323,12 +322,12 @@ border-radius: 0px 8px 8px 8px;
     width: 95%;
     overflow-x: auto;
     padding: 10px;
-    gap: 10px;
+    gap: 12px;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
     height: 250px;
-    scroll-padding: 20px;
+    scroll-padding: 10px;
 }
 
 .Skills{
@@ -336,16 +335,16 @@ border-radius: 0px 8px 8px 8px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    flex-direction: column;
     width: 170px;
     height: 210px;
     border-radius: 40px;
-    border: 3px solid #49653b;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.427);
-    background-color: #7aad5f6e;
+    background-color: #f7fff7;
     flex-shrink: 0;
 }
 .Skills_container::-webkit-scrollbar {
-    height: 8px; 
+    height: 5px; 
 }
 
 .Skills_container::-webkit-scrollbar-track {
@@ -356,8 +355,7 @@ border-radius: 0px 8px 8px 8px;
 
 .Skills_container::-webkit-scrollbar-thumb {
     background: #43613e;
-    border-radius: 100px;
-    border: 2px solid #98dcba; 
+    border-radius: 100px; 
 }
 
 .Skills_container::-webkit-scrollbar-thumb:hover {
@@ -386,11 +384,35 @@ border-radius: 0px 8px 8px 8px;
 
 .progress-stroke {
     fill: none; 
-    stroke: #43613e; 
+    stroke: #ED5376; 
     stroke-width: 8px;
     stroke-linecap: round; 
     stroke-dasharray: 251; 
     stroke-dashoffset: 210;
+}
+.Skill_level{
+    font-family: "IBM Plex Mono";
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background-color: #5b5b5b1a;
+}
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.si {
+    font-size: 25px; 
+    color: #5D696E;
+    display: inline-block;
+    transform:  scale(1.5) rotate(90deg);
+
 }
 
 .contacts{
