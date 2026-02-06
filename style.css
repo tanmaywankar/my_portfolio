@@ -192,6 +192,7 @@
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    position: relative;
     width: 250px;
     overflow: hidden;
     height: 320px;
@@ -255,10 +256,11 @@ border-radius: 0px 8px 8px 8px;
 }
 
 .Core{
-    position: relative;
+    position: absolute;
     z-index: 10;
     font-family: "IBM Plex Mono" ;
-    top: 30px;
+    top: 20px;
+    left: 25px;
     font-size: 20px;
     color: #2a2a2a;
     text-transform: uppercase;
@@ -269,6 +271,7 @@ border-radius: 0px 8px 8px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     justify-content:space-around;
     width: 250px;
     height: 320px;
@@ -278,31 +281,68 @@ border-radius: 0px 8px 8px 8px;
     border-radius: 40px;
 }
 
-.Work{
-    position: relative;
+.Current_status{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+}
+.Status_card{
+    display: flex;
+    margin: 5px;
+    width: 100%;
+    border-radius: 30px;
+    height: 40%;
+    background-color: #ffffff60;
+}
+.Title_icon{
+    /* background-color: #2a9d8a5f; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+.Title_description{
+    width: 65%;
+    display: flex;
+    font-size: 13px;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
     font-family: "IBM Plex Mono";
-    top: 15px;
+}
+
+.Title_description p{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.Briefcase{
+    width: 1em;
+    height: 1em;
+    font-size: 50px;
+    color: #ebf5ff;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #323a9360;
+    border-radius: 25px;
+}
+
+.Work{
+    position: absolute;
+    font-family: "IBM Plex Mono";
+    top: 20px;
+    left: 25px;
     margin-bottom: 15px;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 20px;
 }
 
-.current{
-    display: flex;
-    background-color: #ffffff42;
-    height: 100px;
-    padding-bottom: 10px;
-    width: 90%;
-    border-radius: 20px;
-}
-.currently{
-    font-family: "IBM Plex Mono";
-    text-transform: uppercase;
-    font-size: 15px;
-    margin: 10px 20px;
-    font-weight: 900;
-}
 .grid_item5{
     width: 750px;
     display: flex;
@@ -366,7 +406,7 @@ border-radius: 0px 8px 8px 8px;
     top: 15px;
     font-weight: 900;
     text-transform: uppercase;
-    left: 40px;
+    left: 25px;
     display: flex;
     font-size: 20px;
     font-family: "IBM Plex Mono";
@@ -418,7 +458,60 @@ border-radius: 0px 8px 8px 8px;
 .contacts{
     position: relative;
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     border-radius: 70px 70px 0px 0px;
-    background-color:#b8f7ff;
+    background-color:#004f5a;
+    box-shadow: 0px 5px 20px #2a2a2a81;
+}
+
+.email{
+    font-size:80px;
+    font-family: "Playfair Display";
+    font-weight: 900;
+    text-decoration: none;
+    color: #9dffbb;
+}
+
+.Social_handles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 600px;
+    height: 80px;
+}
+
+.Handle_cover{
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+    background-color: #0f4139;
+    border-radius: 40px;
+    border: 5px solid #9dffbb;
+}
+.Handle_icons{
+    width: 1em;
+    height: 1em;
+    font-size: 32px;
+    color: #9dffbb;
+    padding: 10px;
+    margin: 5px;
+    overflow: visible;
+    background-color: #00000045;
+    border: 1px;
+    border-radius: 50%;
+}
+
+.Handle_link{
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    font-family: "IBM Plex Mono";
+    color: #9dffbb;
 }
