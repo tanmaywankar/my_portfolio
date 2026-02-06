@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-
+alert("Site is currently Work in Progress and so a good amount of things are not working");
 window.addEventListener('DOMContentLoaded', () => {
     const radius = 40;
     const circumference = 2 * Math.PI * radius; 
