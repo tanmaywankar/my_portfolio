@@ -1,8 +1,3 @@
-if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
-}
-
-window.scrollTo(0, 0);
 
 gsap.registerPlugin(ScrollTrigger);
 // alert("Site is currently Work in Progress and so a good amount of things are not working");
