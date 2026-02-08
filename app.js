@@ -69,10 +69,10 @@ heroTl.from(".heading", {
     stagger: 0.2,
     ease: "back.out(1.7)"
 }, "-=0.5")
-gsap.from(".grid1", {
+gsap.from(".grid1 , .navbar, .Cta", {
     y: 100,
     opacity: 0,
-    delay: 1,
+    delay: 1.5,
     duration: 1.5,
     stagger: 0.3,
     ease: "power4.out",
@@ -88,6 +88,7 @@ gsap.from(".grid1", {
 const heroContainer = document.querySelector(".hero");
 
 function initHeroParallax() {
+    if(window.matchMedia("pointer:fine").matches){
     heroContainer.addEventListener("mousemove", (e) => {
         const { width, height, left, top } = heroContainer.getBoundingClientRect();
         const xPos = ((e.clientX - left) / width) - 0.5;
@@ -117,6 +118,7 @@ function initHeroParallax() {
         });
     });
 }
+}
 
 gsap.from(".grid_item3, .grid_item4, .Status_card, .grid_item5", {
     y: 50,              
@@ -126,7 +128,7 @@ gsap.from(".grid_item3, .grid_item4, .Status_card, .grid_item5", {
     ease: "power2.out",  
     scrollTrigger: {
         trigger: ".Bento_grid", 
-        start: "top 30%",       
+        start: "top 15%",       
         toggleActions: "play none none none" 
     }
 });

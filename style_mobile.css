@@ -1,0 +1,275 @@
+
+@media (max-width: 1100px){
+
+
+    .hero{
+        height: 70vh;
+    }
+
+    .float_icon{
+    width: 0.5em;
+    }
+
+    .Ic_left{
+        top: 15vh;
+        left: 15vw;
+    }
+    .Ic_right{
+        bottom: 15vh;
+        right: 15vw;
+    }
+    
+
+    .heading{
+        font-size: 60px;
+        top: 0px;
+    }
+
+    .Bento_grid{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .grid1{
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        top: 0px;
+    }
+    .grid2{
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .email{
+        font-size: 45px;
+    }
+
+
+    .grid_item1, .grid_item2{
+        width: 40%;
+        height: 320px;
+    }
+
+    .grid2_1{
+        width: 100%;
+        gap: 40px;
+    }
+
+    .Recent_project_Image{
+        width: 400px;
+        left: 10px;
+    }
+
+    .IOT_Image{
+    top: 100px;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    }
+
+    .grid_item3 , .grid_item4{
+        width: 40%;
+        margin: 0;
+        padding: 0;
+    }
+    .grid_item5{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 85%;
+        flex-direction: column;
+    }
+    .Cta{
+        left: 50%;
+        right: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+    }
+    .navbar{
+        display: none;
+    }
+
+    .Social_handles{
+        width: 500px;
+    }
+    
+}
+
+@media (max-width: 600px){
+
+
+    .hero{
+        height: 50vh;
+    }
+
+    .float_icon{
+    width: 0.2em;
+    }
+
+    .Ic_left{
+        top: 12vh;
+        left: 15vw;
+    }
+    .Ic_right{
+        bottom: 12vh;
+        right: 15vw;
+    }
+    
+
+    .heading{
+        font-size: 25px;
+        top: 0px;
+    }
+
+    .Bento_grid{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .grid1{
+        flex-direction:column;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        gap: 15px;
+    }
+    .grid2{
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .grid_item1, .grid_item2{
+        width: 80%;
+        gap: 15px;
+        margin: 0;
+        height: 280px;
+    }
+    
+    .grid2_1{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Recent_project_Image{
+        width: 360px;
+        left: 10px;
+    }
+
+    .IOT_Image{
+    top: 100px;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+}
+
+.grid_item3 , .grid_item4{
+    width: 80%;
+        height: 280px;
+        margin: 0;
+        padding: 0;
+    }
+    .grid_item5{
+        display: flex;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        height: 280px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .Cta{
+        left: 50%;
+        right: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+        top: 10px;
+        padding:8px 20px;
+        /* bottom: 10px; */
+    }
+    .Cta_text{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .card_text{
+        font-size: 15px;
+    }
+    .card_brief{
+        font-size: 25px;
+    }
+    .navbar{
+        display: none;
+    }
+    
+    .Social_handles{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .email{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .Handle_link{
+       font-size: 12px;
+    }
+
+    
+    .Handle_icons{
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .Handle_cover{
+        width: 130px;
+        height: 30px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 15px;
+        border: 1px solid #9dffbb;
+    }
+
+    .contacts{
+        height: 140px;
+    }
+    .Skills_container{
+        height: 200px;
+        gap: 2%;
+        margin: 30px;
+    }
+
+    .Skills{
+    flex-direction: column;
+    width: 120px;
+    height: 150px;
+    border-radius: 40px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.427);
+    background-color: #f7fff7;
+    flex-shrink: 0;
+    overflow: hidden;
+    }
+    .Skill_level{
+    font-size: 10px;
+    padding: 5px;
+    }
+
+}
