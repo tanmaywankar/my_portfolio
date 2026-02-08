@@ -183,6 +183,9 @@
     .Briefcase{
         font-size: 40px;
     }
+    .Core, .Work, .Skills_label{
+        font-size: 15px;
+    }
     .grid_item5{
         display: flex;
         overflow: hidden;
@@ -253,6 +256,7 @@
 
     .contacts{
         height: 140px;
+        overflow: hidden;
     }
     .Skills_container{
         height: 200px;
