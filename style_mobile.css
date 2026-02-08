@@ -180,6 +180,9 @@
         margin: 0;
         padding: 0;
     }
+    .Briefcase{
+        font-size: 40px;
+    }
     .grid_item5{
         display: flex;
         overflow: hidden;

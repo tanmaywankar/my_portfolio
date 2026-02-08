@@ -354,7 +354,7 @@ border-radius: 0px 8px 8px 8px;
 .Title_icon{
     /* background-color: #2a9d8a5f; */
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     width: 35%;
 }
