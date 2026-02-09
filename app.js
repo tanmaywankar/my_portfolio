@@ -176,7 +176,7 @@ gsap.fromTo(".progress-stroke",
     stagger: 0.3,       
     ease: "power2.out",  
     scrollTrigger: {
-        trigger: ".contacts", 
+        trigger: ".grid_item5", 
         start: "top 80%",       
         toggleActions: "play none none none" 
     }
