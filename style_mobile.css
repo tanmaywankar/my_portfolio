@@ -106,6 +106,7 @@
 
     .float_icon{
     width: 0.5em;
+    display: none;
     }
 
     .Ic_left{
